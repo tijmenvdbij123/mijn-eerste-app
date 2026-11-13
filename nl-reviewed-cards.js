@@ -1,0 +1,53 @@
+/** Dutch-language editorial corrections for dynamic cards and instructions.
+ * Applied after existing phrase and game-specific translations. */
+const REPLACEMENTS = [
+  [/\bsterven\b/gi,'die'],
+  [/\bdeur\b/gi,'door'],
+  [/\bvan een woord herhaalt\b/gi,'of een woord herhaalt'],
+  [/\bvan geluiden\b/gi,'of geluiden'],
+  [/\bvan een combinatie\b/gi,'of een combinatie'],
+  [/\bvan de actieve speler\b/gi,'of de actieve speler'],
+  [/\bvan schrijf\b/gi,'of schrijf'],
+  [/\bvan de app wijst hen aan\b/gi,'of de app wijst hen aan'],
+  [/\bvan letters te schrijven\b/gi,'of letters te schrijven'],
+  [/\bNaam (\d+) meer\b/gi,'Noem er nog $1'],
+  [/\bNAAM (\d+) MEER\b/g,'NOEM ER NOG $1'],
+  [/\bNOEM (\d+) PLACES IN Een STAD\b/gi,'NOEM $1 PLEKKEN IN EEN STAD'],
+  [/\bDINGEN BIJ DE PARK\b/gi,'DINGEN IN HET PARK'],
+  [/\bDINGEN BIJ SCHOOL\b/gi,'DINGEN OP SCHOOL'],
+  [/\bDINGEN IN Een HUIS\b/gi,'DINGEN IN EEN HUIS'],
+  [/\bDINGEN DAT KAN VLIEGEN\b/gi,'DINGEN DIE KUNNEN VLIEGEN'],
+  [/\bDINGEN JE KAN DRAGEN\b/gi,'DINGEN DIE JE KUNT DRAGEN'],
+  [/\bVOORBEELD \(TELT MEE\): SHOP\b/g,'VOORBEELD (TELT MEE): WINKEL'],
+  [/\bGEHEIM CIJFERS\b/gi,'GEHEIME CIJFERS'],
+  [/\bGEHEIM MIME AANWIJZINGEN\b/gi,'GEHEIME UITBEELDOPDRACHTEN'],
+  [/\bGEBRUIKEN ALLE VIER GETALLEN PRECIES ÉÉN KEER\b/gi,'GEBRUIK ALLE VIER GETALLEN PRECIES ÉÉN KEER'],
+  [/\bGEBRUIKEN 24-UUR TIJD\b/gi,'GEBRUIK DE 24-UURSKLOK'],
+  [/\bWat tijd is (\d+) minuten (NA|VOOR)\b/gi,'Hoe laat is het $1 minuten $2'],
+  [/\bWat tijd is\b/gi,'Hoe laat is het'],
+  [/\bnee vermenigvuldiging of deling\b/gi,'geen vermenigvuldiging of deling'],
+  [/\bAL(L)?EEN \(nee\b/gi,'ALLEEN (geen'],
+  [/\bToegestaan: \+ en − ALLEEN\b/g,'Alleen + en − toegestaan'],
+  [/\bVERVANG HET CIJFER DEUR\b/gi,'VERVANG HET CIJFER DOOR'],
+  [/\bVERVANG DE CIJFERS TUSSEN HAAKJES DEUR\b/gi,'VERVANG DE CIJFERS TUSSEN HAAKJES DOOR'],
+  [/\bGEHEIM WOORD: (\d+) letters\b/gi,'GEHEIM WOORD: $1 LETTERS'],
+  [/\bOneven getallen kun je niet deur 2 delen zonder rest; EVEN getallen wel\./gi,'Oneven getallen zijn niet zonder rest deelbaar door 2; even getallen wel.'],
+  [/\bBeginnen met het woord\b/gi,'Begin met het woord'],
+  [/\bTel af en beginnen tegelijk\b/gi,'Tel af en begin tegelijk'],
+  [/\bvan het eigen niveau\b/gi,'op het eigen niveau'],
+  [/\bhet eigen level\b/gi,'het eigen niveau'],
+  [/\bEen NEUTRAAL\b/gi,'Een neutraal'],
+  [/\bLAATSTE 0 RESULTS\b/gi,'LAATSTE 0 RESULTATEN'],
+  [/\bAANTAL\s+?VAN\b/g,'AANTAL VAN'],
+  [/\bzo veel mogelijk woorden op die je NET HEBT GEZIEN\b/gi,'zo veel mogelijk woorden op die je zojuist hebt gezien'],
+  [/\bzo veel mogelijk woorden op sterven je NET HEBT GEZIEN\b/gi,'zo veel mogelijk woorden op die je zojuist hebt gezien'],
+  [/\bGEHEIME WOORDEN — BEKIJK GEDURENDE\b/gi,'GEHEIME WOORDEN — BEKIJK ZE'],
+  [/\bALLEEN echte eindrijmen\b/gi,'Alleen echte eindrijmen'],
+  [/\bmet de dezelfde\b/gi,'met dezelfde'],
+  [/\bworden getoond\.\s+\.$/g,'worden getoond.'],
+];
+export function polishDutchCards(value){
+  let text=String(value);
+  for(const [pattern,replacement] of REPLACEMENTS) text=text.replace(pattern,replacement);
+  return text;
+}
