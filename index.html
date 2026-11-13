@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#15162b" />
+    <meta name="description" content="Living Room Battles V4.7: choose Team Battles or Solo Showdown, with eight difficulty levels, 34–38 minigames and synced game sessions." />
+    <title>Living Room Battles V4.7 — Game Night</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" data-no-translate href="./" aria-label="Living Room Battles home">
+          <span class="brand-mark">✳</span>
+          <span><strong>LIVING ROOM</strong><small>BATTLES</small></span>
+        </a>
+        <div class="topbar-right"><div id="device-language-switcher" class="device-language-switcher" aria-label="Language / Taal / Sprog"></div><span class="live-dot"></span><span>GAME NIGHT, SORTED.</span><span class="version-pill">V4.7</span></div>
+      </header>
+      <main id="app" aria-live="polite"></main>
+      <footer class="site-footer"><span>Built for the living room, not the leaderboard.</span><span>One turn. One point. Infinite rematches.</span></footer>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/peerjs@1.5.5/dist/peerjs.min.js"></script>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
