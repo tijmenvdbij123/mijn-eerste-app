@@ -1,0 +1,28 @@
+/* Version 4.8: individually rewritten Danish game-card content, keyed by English source. */
+export const REVIEWED_DANISH_STORY_THEMES = {
+  "A puppy finds a ball.": "En hundehvalp finder en bold.",
+  "A bunny loses its hat.": "En kanin mister sin hat.",
+  "A cat visits a garden.": "En kat besøger en have.",
+  "A bird looks for a nest.": "En fugl leder efter en rede.",
+  "A bear goes on a picnic.": "En bjørn tager på picnic.",
+  "A kitten finds a door in a tree.": "En killing finder en dør i et træ.",
+  "A friend brings a surprise cake.": "En ven kommer med en overraskelseskage.",
+  "A dog gets lost in a park.": "En hund farer vild i en park.",
+  "A toy robot says hello.": "En legetøjsrobot siger hej.",
+  "A snowman wants to go shopping.": "En snemand vil ud at købe ind.",
+  "Two friends discover a tunnel under their school.": "To venner opdager en tunnel under deres skole.",
+  "A boat appears on a football field.": "En båd dukker op på en fodboldbane.",
+  "A map leads to a secret room.": "Et kort fører til et hemmeligt rum.",
+  "A strange egg appears in the garden.": "Et mærkeligt æg dukker op i haven.",
+  "A bicycle suddenly starts talking.": "En cykel begynder pludselig at tale.",
+  "A museum exhibit comes to life.": "En museumsgenstand bliver levende.",
+  "A forecast predicts upside-down rain.": "Vejrudsigten forudsiger regn, der falder opad.",
+  "A class must solve a mystery before sunset.": "En klasse skal opklare et mysterium før solnedgang.",
+  "A famous painting disappears.": "Et berømt maleri forsvinder.",
+  "A scientist invents a voice-swapping machine.": "En forsker opfinder en maskine, der kan bytte stemmer.",
+  "A class discovers a mystery in its school.": "En klasse opdager et mysterium på skolen.",
+  "A city loses its electricity during a celebration.": "Strømmen går i en by midt under en fest.",
+  "A group of hikers finds a map in a cave.": "En gruppe vandrere finder et kort i en hule.",
+  "A museum prepares a surprising exhibition.": "Et museum forbereder en overraskende udstilling.",
+  "A detective searches for a missing painting.": "En detektiv leder efter et forsvundet maleri."
+};
